@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "ایجاد پرسنل ";
+    Layout = "~/Views/Shared/_LyHome.cshtml";
+}
+
+<section class="hero text-center">
+    <div class="container-sm">
+        <div class="hero-inner">
+            <h1 class="hero-title h2-mobile mt-0 is-revealing">
+                ایجاد پرسنل جدید
+            </h1>
+        </div>
+
+        <div class="InnerBox hero-browser">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="FirstName">نام</label>
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="LastName">نام خانوادگی</label>
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="PersonalCode">کد پرسنلی</label>
+                    <input asp-for="PersonalCode" class="form-control" />
+                    <span asp-validation-for="PersonalCode" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="NationalCode">کد ملی</label>
+                    <input asp-for="NationalCode" class="form-control" />
+                    <span asp-validation-for="NationalCode" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Files">آپلود فایل‌ها</label>
+                    <input asp-for="Files" type="file" multiple class="form-control" />
+                    <span asp-validation-for="Files" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">ذخیره</button>
+            </form>
+        </div>
+    </div>
+</section>

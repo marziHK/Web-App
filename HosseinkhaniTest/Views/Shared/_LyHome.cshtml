@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewBag.Title</title>
+
+    <script>
+        function isIE() { return navigator.userAgent.indexOf('MSIE') > -1 || navigator.userAgent.indexOf('Trident') > -1 };
+        if (isIE()) alert("لطفا از مرورگر های جدید کروم و یا فایر فاکس استفاده کنید");
+
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Roboto:500" rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <link rel="stylesheet" href="~/css/Style.css"/>
+    <link rel="stylesheet" href="~/css/bootstrap.rtl.css"/>
+     <style>
+
+        h1, h2, h3, h4, h5 {
+            font-family: lalezarz !important;
+        }
+
+        p, ul, li {
+            font-family: gandom !important;
+        }
+
+        .site-header-inner {
+            float: left;
+        }
+
+        .button-block, .footer-copyright {
+            font-family: gandom !Important;
+        }
+        /* The Modal (background) */
+        .modal {
+            direction: ltr !important;
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            direction: ltr !important;
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+    </style>
+
+
+    @await RenderSectionAsync("Styles", required: false)
+
+
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+
+        </header>
+
+        <main>
+
+
+            @RenderBody()
+
+
+        </main>
+
+        <footer class="site-footer text-light">
+        </footer>
+    </div>
+
+
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/toastr.min.js"></script>
+    <partial name="_Notification" />
+    <partial name="_ValidationScriptsPartial" />
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

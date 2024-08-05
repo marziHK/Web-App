@@ -1,0 +1,8 @@
+E:\_Projects\test\HosseinkhaniTest\HosseinkhaniTest\obj\Debug\net8.0\HosseinkhaniTest.csproj.AssemblyReference.cache
+E:\_Projects\test\HosseinkhaniTest\HosseinkhaniTest\obj\Debug\net8.0\HosseinkhaniTest.GeneratedMSBuildEditorConfig.editorconfig
+E:\_Projects\test\HosseinkhaniTest\HosseinkhaniTest\obj\Debug\net8.0\HosseinkhaniTest.AssemblyInfoInputs.cache
+E:\_Projects\test\HosseinkhaniTest\HosseinkhaniTest\obj\Debug\net8.0\HosseinkhaniTest.AssemblyInfo.cs
+E:\_Projects\test\HosseinkhaniTest\HosseinkhaniTest\obj\Debug\net8.0\HosseinkhaniTest.csproj.CoreCompileInputs.cache
+E:\_Projects\test\HosseinkhaniTest\HosseinkhaniTest\obj\Debug\net8.0\HosseinkhaniTest.MvcApplicationPartsAssemblyInfo.cache
+E:\_Projects\test\HosseinkhaniTest\HosseinkhaniTest\obj\Debug\net8.0\HosseinkhaniTest.RazorAssemblyInfo.cache
+E:\_Projects\test\HosseinkhaniTest\HosseinkhaniTest\obj\Debug\net8.0\HosseinkhaniTest.RazorAssemblyInfo.cs
